@@ -1,0 +1,93 @@
+@media only screen and (max-width: 1024px ) {
+    .vuhu-homehero-section {
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 768px ) {
+    .navigation {
+        width: 70%;
+        margin-left: auto;
+    }
+    .home-hero-title {
+        font-size: 22px;
+    }
+    .free-trial-title {
+        font-size: 28px;
+    }
+
+}
+
+@media only screen and (max-width: 576px ) {
+
+    .hero-info {
+        order:2 !important;
+    }
+    .hero-home-img {
+        order: 1 !important;
+        margin-bottom: 60px;
+    }
+    .home-hero-area {
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+    .home-hero-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .home-hero-desc {
+        text-align: center;
+    }
+    .home-hero-button {
+        padding: 15px 45px;
+        font-size: 16px;
+    }
+    .hero-button {
+        text-align: center;
+    }
+    .free-trial-title {
+        font-size: 24px;
+    }
+    .free-trial-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .option-icon {
+        width: 130px;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+    .option-info  {
+        margin-left: auto;
+        text-align: center;
+    }
+    .accordion-title {
+        font-size: 14px;
+    }
+    .accordion-item-vuhu {
+        margin-bottom: 30px;
+    }
+    .faq-section {
+        margin-bottom: 140px;
+    }
+    .footer-logo-area {
+        justify-content: center;
+    }
+    .footer-info {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .footer-desc {
+        text-align: center;
+        font-size: 14px;
+    }
+    .footer-nav  {
+        text-align: center;
+        padding:70px 0px;
+        font-size: 15px;
+    }
+    .copyright-text p {
+        font-size: 13px;
+    }
+}

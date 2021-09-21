@@ -1,0 +1,25 @@
+.accordion-item-vuhu {
+    margin-bottom: 20px;
+}
+.accordin-header {
+    padding:26px 40px;
+    box-shadow: 8px 8px 0px #4f4f4f;
+}
+.accordion-title {
+    font-size: 24px;
+    font-weight: 600;
+    color:#ffffff;
+    margin-bottom: 0px;
+}
+.accordion-header-icon {
+    display: inline;
+}
+.accordion-header-icon svg {
+    color:#ffffff;
+}
+.accordin-info-body {
+    color:#ffffff;
+    padding:45px 32px;
+    box-shadow: 8px 0px 0px #4f4f4f;
+    margin-left: 8px;
+}

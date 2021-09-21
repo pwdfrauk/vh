@@ -1,0 +1,86 @@
+.login-page-area {
+    height: calc(100vh + 20vh);
+}
+.progress-bar-password {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-top: -10px;
+
+}
+.progress-line-pass  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    border-radius: 10px;
+}
+.support-subject {
+    padding-left: 20px !important;
+}
+textarea {
+    padding: 20px;
+    width: 100%;
+    border-bottom:1px solid #000000 !important;
+    border-top:1px solid #000000 !important;
+    border-left:1px solid #000000 !important;
+    border-right:1px solid #000000 !important;
+    border-bottom:1px solid #000000 !important;
+}
+textarea:focus {
+    outline: none;
+    border:1px solid #000000 !important;
+}
+.login-section {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+   
+}
+.log-in-area {
+    width: 40%;
+    padding-top: 80px;
+}
+.log-in-title {
+    font-size: 45px;
+    font-weight: 800;
+}
+.login-sub-title {
+    font-size: 18px;
+}
+.forgot-pass-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+.are-you-user {
+    font-size: 18px;
+}
+.are-you-user .asking-user {
+    font-weight: 500;
+}
+.are-you-user .free-trial-link {
+    font-weight: 600;
+}
+@media only screen and (max-width: 768px )  {
+    .log-in-area {
+        width: 70%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 576px ) {
+    .log-in-area {
+        width: 95%;
+        margin: auto;
+    }
+    .log-in-title {
+        font-size: 24px;
+    }
+ 
+    .are-you-user .free-trial-link {
+        display: block;
+    }
+}

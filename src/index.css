@@ -1,13 +1,178 @@
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  position: relative;
+}
+a {
+  text-decoration: none !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 1200px;
+}
+.container-fluid {
+  width: 95%;
+  margin: auto;
+}
+.bg-gradient {
+  background: linear-gradient(110deg, rgba(248,193,54,0.5046393557422969) 0%, rgba(245,150,176,0.4990371148459384) 69%) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-my-gradient {
+  background: linear-gradient(110deg, rgba(248,193,54,0.5046393557422969) 0%, rgba(245,150,176,0.4990371148459384) 69%) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* color name col- 1 Electric Violet */
+.color-violet  {
+  color: #820BF0;
+}
+.bg-violet {
+  background: #820BF0;
+}
+/* color name col - 2  Whisper */
+.color-whisper {
+  color:#ECE9F1;
+}
+.color-black-3 {
+  color:#333333 !important;
+}
+.color-black {
+  color:#000000 !important;
+}
+.bg-whisper {
+  background: #ECE9F1;
+}
+.bg-grey-2 {
+ background: #4F4F4F;
+}
+.color-grey-2 {
+  color:#4F4F4F;
+}
+.color-grey-3 {
+  color:#828282;
+
+}
+.color-white {
+  color:#ffffff;
+}
+.color-disable {
+  color:#BDBDBD;
+}
+.font-24 {
+  font-size: 24px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-14 {
+  font-size: 14px;
+}
+/* color name col -3  */
+/* hero section gradient  */
+/* button sm */
+.button-small {
+  background:#820BF0;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  padding:10px 30px;
+  box-shadow: 2px 2px 0px #000000;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+/* learg button  */
+.button-large {
+  background:#820BF0;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  padding:12px 30px;
+  box-shadow: 4px 4px 0px #000000;
+  text-decoration: none;
+  padding: 20px 68px;
+  transition: 0.3s ease;
+  
+}
+.button-small::after,
+.button-large::after {
+  content: '';
+  width: 0;
+  height: 0;
+  background-color: transparent !important;
+}
+.button-large:hover {
+  box-shadow: 3px 3px 0px #000000;
+transform: translateY(2px);
+}
+.button-small:hover {
+  box-shadow: 1px 1px 0px #000000;
+  transform: translateY(1px);
+}
+/* pop up area  */
+.pop-up-area {
+  width: 100%;
+  height: 100vh;
+  background-color:rgba(79, 79, 79, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.pup-up-box {
+  width: 50%;
+  height: 50vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 20px;
+}
+input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 60px;
+  padding-right: 15px;;
+  border: 1px solid #000000;
+  outline: none;
+}
+input[type='email'],
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+}
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+input::focus {
+  outline: none;;
+}
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+.input-icon {
+  width: 25px;
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 1;
 }

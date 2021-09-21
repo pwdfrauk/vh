@@ -1,0 +1,54 @@
+.free-trial-section {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.tree-trial-info {
+    width: 95%;
+    margin: auto;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+.free-trial-title {
+    font-size: 48px;
+    padding-bottom: 37px;
+}
+.free-trial-desc {
+    margin-bottom: 20px;
+}
+.free-trial-option {
+    margin-bottom: 62px;
+}
+.option-icon img{
+    width: 100%;
+}
+.option-info {
+    margin-left: 115px;
+}
+.option-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.option-desc {
+    line-height: 2;
+}
+.option-link-button {
+    text-decoration: none;
+    font-size: 16px;
+    display: inline;
+}
+.option-title,
+.option-desc,
+.option-link-button {
+    font-weight: 500;
+}
+.option-link-button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #333333;
+    transition: width ease .3s;
+}
+.option-link-button:hover::after {
+    width: 35% !important;
+}

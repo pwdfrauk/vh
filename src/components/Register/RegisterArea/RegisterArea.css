@@ -1,0 +1,111 @@
+.register-hero-area {
+    margin-top: 70px;
+    padding-bottom: 45px;
+ 
+}
+.register-page-img {
+    height: 475px;
+}
+.reg-title {
+    font-size: 24px;
+    font-weight: 800;
+}
+.reg-desc {
+    font-size: 16px;
+    font-weight: 400;
+}
+.terms-button {
+    font-weight: 600;
+}
+
+.coupon-code {
+    margin-bottom: 20px;
+    position: relative;
+}
+.coupon-code-input {
+    z-index: 20;
+    font-size: 50px;
+    padding: 0px;
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+}
+.coupon-placeholder-bar {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    z-index: 1;
+}
+
+.coupon-code-number {
+    width: 25px;
+    border-bottom:2px solid rgba(51, 51, 51, 0.5);
+    display: inline-block;
+}
+.show-pass-icon {
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.invite-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.checkbox-area {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.from-submit-button {
+    border:none;
+    padding: 16px 70px;
+    color: #ffffff;
+}
+/* tegister terms of service  */
+.terms-of-service-pop-area {
+    display: none;
+}
+.terms-pop-up-box {
+    height: auto;
+}
+.terms-pop-header {
+    font-size: 24px;
+    font-weight: 600;
+}
+.terms-info {
+    overflow-y: auto;
+    height: 240px;
+}
+.terms-button {
+    display: inline-block;
+}
+.terms-agree {
+    display: flex;
+    justify-content: space-between;
+}
+.terms-button-agree {
+    background:#820BF0;
+    color: #ffffff;
+    padding: 8px 16px;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.terms-button-disagree {
+    background:#EB5757;
+    color: #ffffff;
+    padding: 8px 16px;
+    box-shadow: 3px 3px 0px #000000;
+}
+.terms-button-agree:hover,
+.terms-button-disagree:hover {
+    box-shadow: 2px 2px 0px #000000;
+	transform: translateY(1px);
+    color: #ffffff;
+}
+.terms-button-show {
+    font-weight: 600;
+}
