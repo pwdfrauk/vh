@@ -15,7 +15,7 @@ const RegisterNoCodeArea =()=> {
                             making sure to add your invitation code to gain access too.</p>
                     <RegisterNoForm />
                     </div>
-                    <AnimationMobile />
+                    <AnimationMobile hideonmobile={'d-none d-md-block'} />
                 </div>
             </div>
         </div>

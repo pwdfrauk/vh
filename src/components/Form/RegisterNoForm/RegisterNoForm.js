@@ -1,5 +1,7 @@
 import {useState} from 'react'
 import { useHistory } from 'react-router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const RegisterNoForm =()=> {
     const history = useHistory()
@@ -34,7 +36,7 @@ const RegisterNoForm =()=> {
                 placeholder="Email address"
                 value={email} 
                 onChange={handleChange} />
-                <i className="input-icon fas fa-envelope"></i>
+                  <FontAwesomeIcon className='input-icon' icon={faEnvelope} />
                 
             </div>
             <h2 className="invite-title color-balck-3 ">Have you received an invite?</h2>
