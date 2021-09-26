@@ -1,6 +1,8 @@
 import RegisterForm from '../../Form/RegisterForm/RegisterForm';
 import AnimationMobile from '../../Home/HeroArea/AnimationMobile/AnimationMobile';
 import './RegisterArea.css';
+import { Link } from 'react-router-dom';
+
 
 const RegisterArea = ()=> {
     return(
@@ -14,7 +16,7 @@ const RegisterArea = ()=> {
                     <p className="reg-desc color-black-3 text-center text-md-start mb-2">Simply register an account by selecting your 
                         email address and password below,
                          making sure to add your invitation code to gain access too.</p>
-                         {/* <a className="terms-button-show color-violet" href="javascript:void(0)">By registering you agree to our terms of service.</a> */}
+                    <Link className="terms-button-show color-violet" to="registeragrey" >By registering you agree to our terms of service.</Link>
                     <RegisterForm />
                   
                 </div>

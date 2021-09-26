@@ -1,0 +1,75 @@
+.terms-of-service-pop-area {
+    display: block;
+}
+.terms-pop-up-box {
+    height: auto;
+}
+.terms-pop-header {
+    font-size: 24px;
+    font-weight: 600;
+}
+.terms-info {
+    overflow-y: auto;
+    height: 240px;
+}
+.terms-button {
+    display: inline-block;
+}
+.terms-agree {
+    display: flex;
+    justify-content: space-between;
+}
+.terms-button-agree {
+    background:#820BF0;
+    color: #ffffff;
+    padding: 8px 16px;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.terms-button-disagree {
+    background:#EB5757;
+    color: #ffffff;
+    padding: 8px 16px;
+    box-shadow: 3px 3px 0px #000000;
+}
+.terms-button-agree:hover,
+.terms-button-disagree:hover {
+    box-shadow: 2px 2px 0px #000000;
+	transform: translateY(1px);
+    color: #ffffff;
+}
+.terms-button-show {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px ) {
+
+    .terms-pop-up-box {
+        width: 80% !important;
+        height: auto;
+    }
+
+
+ }
+ @media only screen and (max-width: 576px ) {
+  
+    .terms-pop-up-box {
+        width: 80% !important;
+        height: auto;
+    }
+    .terms-pop-header {
+        font-size: 18px;
+    }
+    .register-hero-area {
+        padding: 50px 0px;
+        width: 95%;
+        margin: auto;
+    }
+    .reg-title {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+   
+ }

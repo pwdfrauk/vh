@@ -1,5 +1,6 @@
 import RegisterNoCodeArea from "./RegisterNoCedeArea/RegisterNoCodeArea";
 import Header from "../Header/Header";
+import './RegisterNoCode.css'
 
 const RegisterNoCode =()=> {
     return(

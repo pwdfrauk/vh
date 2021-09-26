@@ -8,7 +8,7 @@
 }
 @media only screen and (max-width: 768px ) {
     .register-page-hero-section  {
-        height: 100vh;
+        height:calc(100vh + 30vh);
     }
     .terms-pop-up-box {
         width: 80% !important;
