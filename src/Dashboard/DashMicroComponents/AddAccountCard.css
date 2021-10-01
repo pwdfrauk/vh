@@ -1,0 +1,61 @@
+.dash-add-accout-card {
+    width: 540px;
+    border:1px solid #E0E0E0;
+    padding: 60px 40px;
+    text-align: center;
+    margin:auto;
+    margin-top: 150px;
+}
+.dash-add-account-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.dash-add-account-icon img {
+    width: 140px;
+    height: 140px;
+}
+.dash-add-accout-card-info h3 { 
+font-size: 24px; 
+font-weight: 400; 
+color:#000000; 
+margin-top: 76px;
+}
+.dash-add-accout-card-info p {
+    margin-top:23px;
+}
+.dash-add-accout-card-info  a {
+    margin-top: 50px;
+    display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+    .dash-add-accout-card {
+        width: 95% !important;
+        margin:auto;
+        padding: 45px 15px;
+         margin-top:130px;
+    }
+    .dash-add-accout-card-info h3 {
+        margin-top: 45px;
+        font-size: 18px;
+    }
+    .dash-add-accout-card-info a {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .dash-add-accout-card {
+        width: 95% !important;
+        margin:auto;
+        padding: 45px 15px;
+         margin-top:40px;
+    }
+    .dash-add-accout-card-info h3 {
+        margin-top: 45px;
+        font-size: 18px;
+    }
+    .dash-add-accout-card-info a {
+        margin-top: 20px;
+    }
+}

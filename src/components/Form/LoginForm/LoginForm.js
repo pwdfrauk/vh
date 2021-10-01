@@ -3,10 +3,12 @@ import './LoginForm.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faEyeSlash, faLock, } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+
 const eye =  <FontAwesomeIcon icon={faEyeSlash} />
 
-
 const LoginForm =()=> {
+    const history = useHistory();
     const [email, setEamil] = useState('');
     const [password, setPassword] = useState('');
     const [passwordShown, setPasswordShown] = useState(false);
@@ -28,6 +30,10 @@ const LoginForm =()=> {
     const togglePasswordVisiblity = () => {
         setPasswordShown(passwordShown ? false : true);
       };
+
+     const godashboard=()=> {
+        history.push("/account");
+      }
     return(
         <form onSubmit={submitHandler}>
             <div className="input-group">
@@ -52,7 +58,10 @@ const LoginForm =()=> {
                 <Link className="color-black" to="forgotpassword">Forgotten Password?</Link>
             </h5>
             <div className="reg-submit-button text-center text-md-start">
-                <input className="button-large from-submit-button" type="submit" value="Login" />
+                <input className="button-large from-submit-button" 
+                type="submit" 
+                value="Login" 
+                onClick={godashboard}/>
             </div>
         </form>
     )
