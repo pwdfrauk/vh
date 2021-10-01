@@ -6,37 +6,49 @@ export default  class LoginForm extends React.Component {
 
     state= {
         email: '',
-        subject: '',
+        registerType: '',
         text: '',
     }
 
     handleChange = (e) => {
-        this.setState({
-            [e.target.name]:e.target.value,
-        })
+        if(e.target.type === 'email') {
+            this.setState({
+                email:e.target.value,
+            })
+        } else if(e.target.type === 'select-one') {
+            this.setState({
+                registerType:e.target.value,
+            })
+        } else if(e.target.type === "textarea") {
+            this.setState({
+                text:e.target.value,
+            })
+        }
     }
 
     submitHandler = (e) => {
         e.preventDefault();
-        const {email, subject, text } =this.state;
-        console.log(email, subject, text);
+        const {email, registerType, text } =this.state;
+        console.log(email, registerType, text);
     }
 
     render() {
-        const {email, subject, text } =this.state;
+        const {email, registerType, text } =this.state;
         const {handleChange, submitHandler} = this;
         return(
             <form onSubmit={submitHandler}>
             <div className="input-group">
-                <input type="Email" id="email" name="email"
+                <input type="email" id="email" name="email"
                  placeholder="Email address"
                  value={email} onChange={handleChange} />
                 <FontAwesomeIcon className='input-icon' icon={faEnvelope} />
             </div>
             <div className="input-group">
-                <input className="support-subject" type="text" id="subject" name="subject" 
-                placeholder="What is your query about" 
-                value={subject } onChange={handleChange}/>
+            <select value={registerType} onChange={handleChange}>
+                   <option>Membership</option>
+                   <option>Subscription</option>
+                   <option>Free-trial</option>
+            </select>
             </div>
             <div className="input-group">
               <textarea className="text-area" name="text" type="textarea" id="" cols="50" rows="5" 

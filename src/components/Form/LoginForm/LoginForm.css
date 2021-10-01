@@ -8,8 +8,16 @@ input {
 }
 input[type='email'],
 input[type='text'],
-input[type='password'] {
+input[type='password'],
+select {
     width: 100%;
+}
+select {
+    padding:15px;
+    border:1px solid #000000;
+}
+slect:focus {
+    border:1px solid #000000;
 }
 input[type=checkbox] {
     transform: scale(1.5);
