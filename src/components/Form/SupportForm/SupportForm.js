@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faUsers } from '@fortawesome/free-solid-svg-icons'
+import './SupportForm.css'
 
 export default  class LoginForm extends React.Component {
 
@@ -45,10 +46,12 @@ export default  class LoginForm extends React.Component {
             </div>
             <div className="input-group">
             <select value={registerType} onChange={handleChange}>
+                  <option value="" disabled selected>Select Register Type</option>
                    <option>Membership</option>
                    <option>Subscription</option>
                    <option>Free-trial</option>
             </select>
+            <FontAwesomeIcon className='input-icon' icon={faUsers} />
             </div>
             <div className="input-group">
               <textarea className="text-area" name="text" type="textarea" id="" cols="50" rows="5" 

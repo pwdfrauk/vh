@@ -12,6 +12,14 @@ input[type='password'],
 select {
     width: 100%;
 }
+select {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    padding-right: 15px;
+    border: 1px solid #000000;
+    outline: none;
+}
 slect:focus {
     border:1px solid #000000;
 }
@@ -42,3 +50,14 @@ input::focus {
     transform: translateY(-50%);
     cursor: pointer;
 }
+/* makeing select place holder  */
+select:required:invalid {
+    color: #666;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: #333;
+  }
+  /* end  select  placeholder  */
