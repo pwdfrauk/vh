@@ -1,14 +1,12 @@
-import  './Header.css';
+import  './DashboardMobileMenu.css';
 import logo from './logo.png';
-import loginmobile from './loginmobile.png';
-import loginicon from './loginicon.png'
 import {Link} from 'react-router-dom'
-import {NavLink} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faPlusSquare, faPowerOff, faTimes } from '@fortawesome/free-solid-svg-icons';
+import dashicon from './dashiconwhite.png'
 import { useState } from 'react';
 
-const Header =()=> {
+const DashboardMobileMenu =()=> {
     const[mibileMenu, setMobileMenu] = useState(false);
 
     const showMobileMenu =()=> {
@@ -22,7 +20,7 @@ const Header =()=> {
     }
 
     return(
-        <header>
+        <header className="dashboardmobilemenu">
             <div className="container-fluid">
                 <div className="navigation-area">
                     <Link className="logo-link" to="/">
@@ -36,17 +34,7 @@ const Header =()=> {
                         </div>
                     </Link>
                         <div className="navigation">
-                            <ul className="desktop-menu">
-                                <li><NavLink exact activeClassName="active" to="/">home</NavLink > </li>
-                                <li><NavLink exact activeClassName="active" to="support">support</NavLink></li>
-                                <li><Link className="button-small" to="register">14-day free trial</Link></li>
-                                <li> <NavLink exact activeClassName="active" to="login">
-                                        <img className="login-icon" src={loginicon} alt="login-icon" />
-                                        <span>Log in</span>
-                                    </NavLink></li>
-                            </ul>
                             <ul className="mobile-navigation">
-                                <li><Link className="button-small" to="register">14-day free trial</Link></li>
                                 <li onClick={showMobileMenu}>
                                     <FontAwesomeIcon className='mobile-toggle-icon' icon={faBars} />
                                 </li>
@@ -56,16 +44,19 @@ const Header =()=> {
                             <div className="menu-close-button" onClick={hiddeMobileMenu}>
                              <FontAwesomeIcon className='mobile-slider-close' icon={faTimes} />
                             </div>
-                            <div className="monile-menu-link">
-                                <Link onClick={hiddeMobileMenu} to="/">Home</Link>
-                                <Link onClick={hiddeMobileMenu} to="support">Support</Link>
-                                <Link onClick={hiddeMobileMenu} to="login">
-                                    <span>Log in</span>
-                                    <img className="login-icon" src={loginmobile} alt='login mobile icon'/>
+                            <div className="dashboard-mobile-menu-link">
+                                <Link className="dashboar-mobile-title" onClick={hiddeMobileMenu} to="account">
+                                    <img src={dashicon} alt="icon"/> Dashboard
                                 </Link>
+                                <p className="dash-mobile-menu-acc-title">Accounts</p>
+                                <div className="mobile-dash-inner-link">
+                                    <Link onClick={hiddeMobileMenu} to="support"><span className="spacer"></span> Connect New Account</Link>
+                                </div>
+                                <Link className="dash-mobile-add-account-link" onClick={hiddeMobileMenu} to="support">
+                                    <FontAwesomeIcon icon={faPlusSquare}/> Connect New Account</Link>
                             </div>
-                            <div className="mobile-menu-trial-button">
-                                <Link onClick={hiddeMobileMenu} className="button-small" to="register">14-day free trial</Link>
+                            <div className="mobileMenu-logout-btn">
+                               <Link to="/"> <FontAwesomeIcon  icon={faPowerOff} /> Log Out </Link>
                             </div>
                         </div>
                         
@@ -74,4 +65,4 @@ const Header =()=> {
         </header>
     )
 }
-export default Header;
+export default DashboardMobileMenu;

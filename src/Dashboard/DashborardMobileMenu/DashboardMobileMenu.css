@@ -1,0 +1,248 @@
+.dashboardmobilemenu {
+    background: linear-gradient(
+        110deg, rgba(248,193,54,0.5046393557422969) 0%, rgba(245,150,176,0.4990371148459384) 69%) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.navigation-area { 
+    display: flex; width: 95%;
+    margin:auto;
+    align-items: center;
+    padding-top: 20px;
+}
+.bg-gradient-menu-area {
+    padding-bottom: 20px;
+    width: auto;
+}
+.navigation-area .logo-link {
+    text-decoration: none !important;
+}
+.vuhu-logo {
+    display: flex;
+}
+.logo-image {
+    width: 90px;
+}
+.logo-image img {
+     width: 80%;
+}
+.logo-tile {
+    display: flex;
+    align-items: center;
+}
+.logo-tile h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color:#263238;
+    margin-left: 0px;
+}
+.navigation {
+    width: 50%;
+    margin-left: auto;
+}
+.bg-gradient-nav {
+    width: auto;
+}
+.bg-gradient-nav .desktop-menu li {
+    margin-right: 64px;
+}
+.bg-gradient-nav .desktop-menu li:last-child {
+    margin-right: 0px;
+}
+.bg-gradient-nav .desktop-menu .notification-icon {
+    font-size: 25px;
+    width: 30px;
+    position: relative;
+}
+
+.bg-gradient-nav .desktop-menu  .notification-icon.active .notification-alert {
+    width: 8px;
+    height: 8px;
+    background:red;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+.bg-gradient-nav .desktop-menu .profile-img-area .profile-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.navigation ul {
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation ul li{
+    display: flex;
+    align-items: center;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color:#333333;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 8px 20px;
+}
+.bg-gradient-nav .mobile-navigation {
+    justify-content: flex-end;
+}
+.navigation ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #333333;
+    transition: width ease .3s;
+}
+.navigation ul li a:hover::after {
+    content: '';
+    display: block;
+    width: 100% !important;
+    height: 2px;
+    background-color: #333333;
+    transition: width ease .3s;
+}
+.navigation ul li a.active::after {
+    width: 100% ;
+}
+.navigation ul li a.button-small {
+    color:#ffffff;
+    text-transform: unset;
+}
+.navigation ul li a  .login-icon { 
+    margin-right: 15px;
+    width: 17px;
+}
+.mobile-navigation {
+    display: none !important;
+}
+/* mobile slider menu  */
+.mobile-menu {
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    background: #820BF0;
+    padding: 20px;
+    width: 100%;
+    display: none;
+    transition-duration: 800ms;
+}
+.left0 {
+    left: 0px !important;
+}
+.left-800 {
+    left: -800px !important;
+}
+.mobile-toggle-icon {
+    cursor: pointer;
+    font-size: 30px;
+    padding: 5px;
+}
+.menu-close-button {
+    text-align: right;
+}
+.menu-close-button i{
+    font-size: 20px;
+    color:#ffffff;
+    padding: 10px;
+    cursor: pointer;
+}
+.dashboard-mobile-menu-link {
+    padding-top: 80px;
+    padding-left: 40px;
+}
+.dashboard-mobile-menu-link a {
+    color:#fff;
+    display:block;
+    text-decoration: none;
+    margin-bottom: 30px;
+
+}
+.dashboard-mobile-menu-link a img {
+    color: #ffffff;
+    margin-left: 10px;
+}
+.mobile-slider-nav-logout {
+    position: absolute;
+    bottom: 30px;
+}
+
+@media only screen and (max-width: 576px ) {
+.dashboardmobilemenu {
+    display: block !important;
+    }
+    .navigation ul {
+        justify-content: flex-end;
+    }
+    .mobile-toggle-icon {
+        font-size: 40px;
+    }
+.mobile-menu {
+    display: block !important;
+    z-index: 999;
+}
+.desktop-menu {
+    display: none !important;
+}
+.mobile-navigation {
+    display: flex !important;
+}
+.vuhu-logo {
+    flex-direction: column;
+}
+.logo-image {
+    width: 53px;
+    height: 50px;
+}
+.logo-tile  h2{
+    margin-left: 0px;
+    font-size: 20px;
+    margin-top: -10px;
+}
+.button-small {
+    padding: 7px 10px;
+}
+.navigation {
+    width: 70%;
+}
+.mobileMenu-logout-btn {
+    position: absolute;
+    bottom:50px;
+    left: 50px;
+}
+.mobileMenu-logout-btn a {
+    color:#ffffff;
+}
+.dashboar-mobile-title,
+dash-mobile-add-account-link {
+    
+    margin-bottom: 46px;
+}
+.dash-mobile-menu-acc-title  {
+    font-size: 16px;
+    color:#ffffffc0;
+    margin-bottom: 22px;
+    font-weight: 500;
+}
+.mobile-dash-inner-link {
+    margin-bottom: 40px;
+}
+.mobile-dash-inner-link a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.spacer {
+    width: 10px;
+    display: inline-block;
+}
+
+}
