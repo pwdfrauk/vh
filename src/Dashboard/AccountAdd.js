@@ -1,23 +1,20 @@
-import AddAccountCard from './DashMicroComponents/AddAccountCard'
 import DesktopMenuAddAccount from './DashMicroComponents/DesktopMenuAddAccount'
 import DashboardLeftside from './DashLeftside/DashboardLeftside'
 import DashboardRightside from './DashRighrtside/DashboardRightside'
 import DashboardMobileMenu from './DashborardMobileMenu/DashboardMobileMenu'
-import React  from 'react'
+import AccountAddForm from './AccountAddForm/AccountAddForm'
 
-class AccountSetting  extends React.Component {
-    render() {
+const AccountAdd =()=> {
     return(
         <>
         <DashboardMobileMenu />
         <div className="container-fluid">
             <div className="row">
                 <DashboardLeftside desktopmenu={<DesktopMenuAddAccount />} />
-                <DashboardRightside rightsidecontent={<AddAccountCard />}/>
+                <DashboardRightside rightsidecontent={<AccountAddForm />}/>
             </div>
         </div>
         </>
     )
 }
-}
-export default AccountSetting;
+export default AccountAdd;

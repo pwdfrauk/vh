@@ -9,7 +9,7 @@ const DesktopMenuAddAccount =()=> {
             <Link clasNames="dash-title color-grey-3 font-16" to="#">
                 <img src={dashboardicon} alt="icon" /> Dashboard</Link>
             <p className="dash-subtitle color-grey-2 font-13 "> Accounts</p>
-            <Link className="dash-accout-link color-violet font-16" to="#"> 
+            <Link className="dash-accout-link color-violet font-16" to="accountadd"> 
              <FontAwesomeIcon icon={faPlusSquare} /> Connect New Account</Link>
         </div>
     )

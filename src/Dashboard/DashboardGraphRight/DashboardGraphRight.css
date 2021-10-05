@@ -1,0 +1,73 @@
+.account-stt-header-and-flow-dtls::after {
+    content: '';
+    display: table;
+    width: 100%;
+    height: 1px;
+    background: #dadada;
+    margin-left: 160px;
+}
+.add-account-accoun-imag {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.account-link {
+    font-weight: 400;
+    margin-left: 36px !important;
+}
+.account-fllowers-details {
+    display: flex;
+    align-items: center;
+}
+.account-fllowers-info {}
+.account-fllowers-info h2 {
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.account-fllowers-info p {
+    margin-bottom: 0px;
+    margin-left: 3px;
+}
+.grow-info .grow-title {
+    font-size: 24px;
+    font-weight: 500;
+    color:#000000;
+}
+.grow-info  .grow-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+.grow-between-select {
+    padding:15px;
+    width: 100%;
+    background: transparent;
+    border-bottom:1px solid #000000;
+
+}
+.grow-between-select:focus {
+    outline: none;
+    border-bottom:1px solid #000000;
+}
+.account-fav-logout {
+    position: absolute;
+    bottom:-30%;
+}
+@media only screen and (max-width:576px) {
+    .account-stt-header-and-flow-dtls::after  {
+        content: '';
+        display: table;
+        width: 100%;
+        height: 1px;
+        background: #dadada;
+        margin-left:0px !important;
+        margin-top: 50px;
+    }
+    .grow-between-select {
+        padding: 15px;
+        width: 94%;
+        margin: auto;
+    }
+    .account-link {
+        margin-left: 49px !important;
+    }
+}

@@ -1,0 +1,61 @@
+.account-add-fav-area {
+
+}
+.account-rightside {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.fav-image {
+    border:2px dashed #820BF0;
+    border-radius: 50%;
+    padding: 8px;
+    width: 100px;
+    height: 100px;
+}
+.fav-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.fab-sub-title {
+    cursor: pointer;
+}
+.alert-box {
+    background: #F9F9F9;
+    padding: 20px;
+}
+.alert-imag {
+    width: 60px;
+    height: 60px;
+    border:2px dashed #820BF0;
+    border-radius: 50%;
+    padding: 5px;
+
+}
+.alert-title {
+    font-weight: 600;
+}
+.close-alert {
+    font-size: 11px;
+    display: inline-block;
+    background: #BDBDBD;
+    width: 18px !important;
+    height: 18px;
+    color: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:576px) {
+    .account-add-fav {
+        padding-top: 20px;
+        height: 100%;
+        padding-bottom: 50px;
+    }
+    .account-rightside {
+        margin-top:40px;
+    }
+}

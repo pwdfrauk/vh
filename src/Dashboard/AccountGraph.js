@@ -1,11 +1,11 @@
-import AddAccountCard from './DashMicroComponents/AddAccountCard'
+import DashboardGraphRight from './DashboardGraphRight/DashboardGraphRight'
 import DesktopMenuAddAccount from './DashMicroComponents/DesktopMenuAddAccount'
 import DashboardLeftside from './DashLeftside/DashboardLeftside'
 import DashboardRightside from './DashRighrtside/DashboardRightside'
 import DashboardMobileMenu from './DashborardMobileMenu/DashboardMobileMenu'
 import React  from 'react'
 
-class AccountSetting  extends React.Component {
+class AccountGraph  extends React.Component {
     render() {
     return(
         <>
@@ -13,11 +13,11 @@ class AccountSetting  extends React.Component {
         <div className="container-fluid">
             <div className="row">
                 <DashboardLeftside desktopmenu={<DesktopMenuAddAccount />} />
-                <DashboardRightside rightsidecontent={<AddAccountCard />}/>
+                <DashboardRightside rightsidecontent={<DashboardGraphRight />}/>
             </div>
         </div>
         </>
     )
 }
 }
-export default AccountSetting;
+export default AccountGraph;

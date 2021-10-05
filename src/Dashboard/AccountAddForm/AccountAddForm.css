@@ -1,0 +1,64 @@
+.account-rightside {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;;
+}
+.account-add-section .add-account:hover {
+    color:#BDBDBD;
+}
+select#location {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 60px;
+    padding-right: 15px;
+    border: 1px solid #000000;
+    position: relative;
+    width: 100%;
+}
+.input-group {
+    position: relative;
+}
+.account-add-card {
+    border: none !important;
+    margin-top: 150px;;
+}
+.account-add-form input[type="text"], 
+.account-add-form input[type="password"],
+.account-add-form input[type="email"],
+.account-add-form select {
+    background-color: #F2F2F2;
+}
+.status {
+    color: #EB5757;
+    font-size: 13px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -10px;
+    display: none;
+}
+.add-account-pass.active {
+    border-color: #820BF0;
+}
+.add-account-pass.active+i{
+    color: #820BF0;
+}
+.add-account-pass.wrrong {
+    border-color: #EB5757;
+}
+.add-account-pass.wrrong+i{
+    color: #EB5757;
+}
+.wrrong {
+    display: block;
+}
+.account-add-form select:focus {
+    outline: none;
+    border:1px solid #000000;
+    border-radius: none;
+}
+@media only screen and (max-width:576px) {
+    .account-add-card {
+        border: none !important;
+        margin-top: 40px;}
+
+}
