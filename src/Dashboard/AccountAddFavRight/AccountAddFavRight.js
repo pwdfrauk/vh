@@ -2,10 +2,12 @@ import instaimag from './insta.png';
 import './AccountAddFavRight.css';
 // import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const AccountAddFav = ()=> {
+    const history = useHistory();
     const [IGuser, setIguser] = useState('');
 
     const handleChange=(e)=> {
@@ -16,6 +18,7 @@ const AccountAddFav = ()=> {
     const  submitConnectForm=(e)=> {
         e.preventDefault()
         console.log(IGuser)
+        history.push("/account-graph");
     }
     return(
         <div className="col-12 col-md-12" >

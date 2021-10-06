@@ -13,7 +13,7 @@ const AddAccountCard = ()=> {
             <div className="dash-add-accout-card-info">
                 <h3>Let's get your account set up!</h3>
                 <p className="color-grey-2">The first step is to connect your Instagram account and get your account set up on the dashboard.</p>
-                <Link className="color-violet font-16" to="#"><FontAwesomeIcon icon={faPlusSquare} /> Connect New Account</Link>
+                <Link className="color-violet font-16" to="accountadd"><FontAwesomeIcon icon={faPlusSquare} /> Connect New Account</Link>
             </div>
         </div>
     )
