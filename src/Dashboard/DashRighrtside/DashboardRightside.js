@@ -7,7 +7,7 @@ class DashboardRightside extends React.Component {
 	return(
 			<div className="col-12 col-md-7 col-xl-9">
 				<div className="dash-rightside">
-					{this.props.rightsidecontent}
+					{this.props.children}
 				</div>
 			</div>    
 	)

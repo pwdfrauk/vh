@@ -18,7 +18,7 @@ class DashboardLeftside extends React.Component {
                     </div>
                 </div>
                 </Link>
-                {this.props.desktopmenu}
+                {this.props.children}
 			   </div>
             </div>
         )

@@ -12,8 +12,12 @@ class AccountSetting  extends React.Component {
         <DashboardMobileMenu />
         <div className="container-fluid">
             <div className="row">
-                <DashboardLeftside desktopmenu={<DesktopMenuAddAccount />} />
-                <DashboardRightside rightsidecontent={<AddAccountCard />}/>
+                <DashboardLeftside>
+                    <DesktopMenuAddAccount />
+                </DashboardLeftside >
+                <DashboardRightside >
+                    <AddAccountCard />
+                </DashboardRightside >
             </div>
         </div>
         </>

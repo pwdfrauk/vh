@@ -9,7 +9,7 @@ import ForgotPassword from './components/ForgotPassword/ForgotPassword';
 import SupportForm from './components/Form/SupportForm/SupportForm';
 import Error from './components/Error/Error'
 import AccountSetting from './Dashboard/AccountSetting';
-import {  Switch, Route, } from 'react-router-dom';
+import { Switch, Route, } from 'react-router-dom';
 import AccountAdd from './Dashboard/AccountAdd';
 import AccountAddFav from './Dashboard/AccountAddFav'
 import AccountGraph from './Dashboard/AccountGraph';

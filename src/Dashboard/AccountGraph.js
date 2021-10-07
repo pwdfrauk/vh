@@ -12,8 +12,12 @@ class AccountGraph  extends React.Component {
         <DashboardMobileMenu />
         <div className="container-fluid">
             <div className="row">
-                <DashboardLeftside desktopmenu={<DesktopMenuAddAccount />} />
-                <DashboardRightside rightsidecontent={<DashboardGraphRight />}/>
+                <DashboardLeftside  >
+                    <DesktopMenuAddAccount />
+                </DashboardLeftside>
+                <DashboardRightside >
+                    <DashboardGraphRight />
+                </DashboardRightside>
             </div>
         </div>
         </>

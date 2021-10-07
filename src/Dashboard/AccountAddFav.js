@@ -10,8 +10,12 @@ const AccountAddFav =()=> {
         <DashboardMobileMenu />
         <div className="container-fluid">
             <div className="row">
-                <DashboardLeftside desktopmenu={<DesktopMenuAddAccount />} />
-                <DashboardRightside rightsidecontent={<AccountAddFavRight />}/>
+                <DashboardLeftside >
+                    <DesktopMenuAddAccount />
+                </DashboardLeftside>
+                <DashboardRightside >
+                    <AccountAddFavRight />
+                </DashboardRightside >
             </div>
         </div>
         </>
