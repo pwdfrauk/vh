@@ -13,6 +13,7 @@ import { Switch, Route, } from 'react-router-dom';
 import AccountAdd from './Dashboard/AccountAdd';
 import AccountAddFav from './Dashboard/AccountAddFav'
 import AccountGraph from './Dashboard/AccountGraph';
+import AccountSettingFavAco from './Dashboard/AccountSettingFavAco';
 function App() {
   return(
     <div>
@@ -29,6 +30,7 @@ function App() {
         <Route path="/accountadd" component={AccountAdd} />
         <Route path='/account-add-fav' component={AccountAddFav} />
         <Route path="/account-graph" component={AccountGraph} />
+        <Route path="/account-seeting-fav-aco" component={AccountSettingFavAco} />
         <Route component={Error}/>
       </Switch>
     </div>

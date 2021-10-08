@@ -49,6 +49,14 @@ const DashboardMobileMenu =()=> {
                                     <img src={dashicon} alt="icon"/> Dashboard
                                 </Link>
                                 <p className="dash-mobile-menu-acc-title">Accounts</p>
+                                <div className="mobile-dash-inner-link">
+                                    <Link onClick={hiddeMobileMenu} to="support">
+                                        <span className="spacer"></span> Favourite Accounts</Link>
+                                        <Link onClick={hiddeMobileMenu} to="support">
+                                        <span className="spacer"></span> Whitelist (2.1k)</Link>
+                                        <Link onClick={hiddeMobileMenu} to="support">
+                                        <span className="spacer"></span>Disconnect Account</Link>
+                                </div>
                                 <Link className="dash-mobile-add-account-link" onClick={hiddeMobileMenu} to="support">
                                     <FontAwesomeIcon icon={faPlusSquare}/> Connect New Account</Link>
                             </div>

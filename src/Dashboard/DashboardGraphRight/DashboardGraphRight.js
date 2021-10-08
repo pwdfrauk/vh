@@ -1,8 +1,9 @@
 
 import Bar from '../Bar'
-import instaimg from './insta.png'
 import './DashboardGraphRight.css'
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPauseCircle } from '@fortawesome/free-solid-svg-icons'
 
 
 const DashboardGraphRight =()=> {
@@ -14,23 +15,18 @@ const DashboardGraphRight =()=> {
         }
         console.log(e.target.value)
     }
-
-
+    
     return(
-        <div className="col-12 col-md-12  col-xl-12" >
+        <div className="col-12 col-md-11  col-xl-12" >
         <div className="account-rightside">
             <div className="account-setting-grap-area col-md-12">
-                <div className="account-stt-header-and-flow-dtls row mb-5">
-                    <div className="col-4 col-md-4 me-md-4 col-xl-2 me-xl-0">
-                        <img className="fav-image" src={instaimg} alt="insta-img" />
+                <div className="account-stt-header-and-flow-dtls row mb-2 mb-md-4 ">
+                    <div className="row">
+                    <div className="grow-info col-md-4 col-md-12 col-xl-5">
+                        <h4 className="grow-title" >Growth Overview - @insta_vuhu</h4>
+                        <p className="grow-subtitle color-grey-3">Your account's follower growth over the last 28 days.</p>
                     </div>
-                    <div className="col-8 col-md-4 col-xl-4 d-flex justify-content-start align-items-center">
-                        <div>
-                        <h2 className="fav-title">@insta_vuhu</h2>
-                        <p className="fab-sub-title color-violet">14 days free trial</p>
-                        </div>
-                    </div>
-                    <div className="account-fllowers-details text-center text-md-start col-12 col-md-12 col-xl-6 mt-4 mt-xl-0 col-xl-6">
+                    <div className="account-fllowers-details text-center text-md-start col-12 col-md-8 col-xl-5  mt-xl-0 ">
                             <div className="row account-fllowers-info">
                                 <h2 className="font-30">2.1k</h2>
                                 <p className="color-grey-3">Followers</p>
@@ -44,13 +40,14 @@ const DashboardGraphRight =()=> {
                                 <p className="color-grey-3">Post</p>
                             </div>
                     </div>
+                    <div className="pause-button-area col-12 col-md-4 col-xl-2 my-3 my-md-0 d-flex justify-content-center align-items-center">
+                        <button className="pause-button color-bg-grey-5 color-grey-3"><FontAwesomeIcon icon={faPauseCircle} /> Push</button>
+                    </div>
+
+                    </div>
                 </div>
                 <div className="row">
-                    <div className="grow-info col-md-12 col-xl-8">
-                        <h4 className="grow-title" >Growth Overview</h4>
-                        <p className="grow-subtitle color-black-3">Your account's follower growth over the last 28 days.</p>
-                    </div>
-                    <div className="check-grow-info d-flex align-items-center justify-content-md-end col-12 col-md-12 col-xl-4 ">
+                    <div className="check-grow-info d-flex align-items-center justify-content-md-end col-12 col-md-4 col-xl-3 mb-2">
                         <select className="grow-between-select" 
                         name="grow-between"
                         onChange={handlechange}
@@ -59,10 +56,10 @@ const DashboardGraphRight =()=> {
                             <option>Last 28 days</option>
                             <option>Last 15 days</option>
                             <option>Last 7 days</option>
-                          </select>
+                        </select>
                     </div>
                 </div>
-                <div className="my-3">
+                <div className="my-3 col-12">
                     <Bar />
                     {/* <canvas id="myChart" width="400" height="200"></canvas> */}
                 </div>

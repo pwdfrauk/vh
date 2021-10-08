@@ -1,3 +1,8 @@
+
+.desktop-menu-instalogo-text p {
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
 .dash-title {
     font-weight: 400;
     margin-bottom: 60px;
@@ -12,4 +17,41 @@
 }
 .dash-accout-link {
     margin-bottom: 30px;
+    margin-top: 75px;
+    display: block;
+}
+.desktop-menu-instalogo-text {
+    display: flex;
+    align-items:center;
+    margin-bottom: 38px;
+}
+.desktop-graph-menu {
+    display: inline-block;
+    padding-top: 18px;
+    padding-bottom:18px;
+    padding-left: 50px;
+    padding-right: 18px;
+}
+.desktop-graph-menu.active {
+    background:rgba(0, 0, 0, 0.1);
+    color:rgba(51, 51, 51, 1);
+}
+.desktop-menu-log-out {
+    position: absolute;
+    bottom:20px;
+}
+.desktop-menu-log-out a {
+    display:flex;
+    align-items:center;
+    font-weight:700;
+    font-size: 18px;
+}
+@media only screen and (max-width:768px) {
+    .desktop-graph-menu {
+        display: inline-block;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 20px;
+        padding-right: 18px;
+    }
 }

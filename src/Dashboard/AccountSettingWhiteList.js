@@ -1,27 +1,26 @@
-import DashboardGraphRight from './DashboardGraphRight/DashboardGraphRight'
+import DesktopMenuAccountGraph from './DashMicroComponents/DesktopMenuAccountGraph'
 import DashboardLeftside from './DashLeftside/DashboardLeftside'
 import DashboardRightside from './DashRighrtside/DashboardRightside'
 import DesktopMobileMenuGraph from './DashborardMobileMenu/DesktopMobileMenuGraph'
-import DesktopMenuAccountGraph from './DashMicroComponents/DesktopMenuAccountGraph'
-import React  from 'react'
+import AccountSettingWhiteRight from './AccountSettingWhiteRight/AccountSettingWhiteRight'
 
-class AccountGraph  extends React.Component {
-    render() {
+
+const AccountSettingWhiteList = ()=> {
     return(
         <>
-        <DesktopMobileMenuGraph />
+         <DesktopMobileMenuGraph />
         <div className="container-fluid">
             <div className="row">
                 <DashboardLeftside  >
-                    <DesktopMenuAccountGraph />
+                <DesktopMenuAccountGraph />
                 </DashboardLeftside>
                 <DashboardRightside >
-                    <DashboardGraphRight />
+                    <AccountSettingWhiteRight/>
                 </DashboardRightside>
             </div>
         </div>
         </>
     )
 }
-}
-export default AccountGraph;
+
+export default AccountSettingWhiteList;

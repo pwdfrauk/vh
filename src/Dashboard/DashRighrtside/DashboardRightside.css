@@ -1,4 +1,11 @@
+
 .dash-rightside {
     overflow: auto;
     padding-bottom: 100px;
+}
+@media only screen and (min-width:990px) {
+    .dash-right-area {
+        width: 68% !important;
+        margin: auto;
+    }
 }

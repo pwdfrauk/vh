@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class DashboardLeftside extends React.Component {
     render() {
         return(
-            <div className="col-md-4 col-xl-3">
+            <div className="col-md-4 dashboard-left-area">
             <div className="dashboard-left-container position-fixed top-0 start-0">
             <Link to="/">
                 <div className="row dash-logo-area">

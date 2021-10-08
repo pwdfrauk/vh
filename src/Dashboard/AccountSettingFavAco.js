@@ -1,27 +1,26 @@
-import DashboardGraphRight from './DashboardGraphRight/DashboardGraphRight'
+import DesktopMenuAccountGraph from './DashMicroComponents/DesktopMenuAccountGraph'
 import DashboardLeftside from './DashLeftside/DashboardLeftside'
 import DashboardRightside from './DashRighrtside/DashboardRightside'
 import DesktopMobileMenuGraph from './DashborardMobileMenu/DesktopMobileMenuGraph'
-import DesktopMenuAccountGraph from './DashMicroComponents/DesktopMenuAccountGraph'
-import React  from 'react'
+import AccountSettingFavAcoRight from './AccountSettingFavAcoRight/AccountSettingFavAcoRight'
 
-class AccountGraph  extends React.Component {
-    render() {
+
+const AccountSettingFavAco = ()=> {
     return(
         <>
-        <DesktopMobileMenuGraph />
+         <DesktopMobileMenuGraph />
         <div className="container-fluid">
             <div className="row">
                 <DashboardLeftside  >
-                    <DesktopMenuAccountGraph />
+                <DesktopMenuAccountGraph />
                 </DashboardLeftside>
                 <DashboardRightside >
-                    <DashboardGraphRight />
+                    <AccountSettingFavAcoRight />
                 </DashboardRightside>
             </div>
         </div>
         </>
     )
 }
-}
-export default AccountGraph;
+
+export default AccountSettingFavAco;

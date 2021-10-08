@@ -24,22 +24,13 @@ const AccountAddFav = ()=> {
         <div className="col-12 col-md-12" >
         <div className="account-rightside">
             <div className="account-add-fav-area col-md-11 col-lg-10 ">
-                <div className="row mb-5">
-                    <div className="col-4 col-md-3 me-md-4 me-xl-0">
-                        <img className="fav-image" src={instaimag} alt="insta-img" />
-                    </div>
-                    <div className="col-8 col-md-8 d-flex justify-content-start align-items-center">
-                        <div>
-                        <h2 className="fav-title">@insta_vuhu</h2>
-                        <p className="fab-sub-title color-violet">14 days free trial</p>
-                        {/* <Link className="fab-sub-title color-violet" to="register">14 days free trial</Link> */}
-                        </div>
-                    </div>
-                </div>
-                <h4 className="font-24 color-black-3 mb-3">Add your favourite IG followers</h4>
-                <p className="font-18 color-black-3 col-12">To get started, we ask you to connect at 
-                least 3 of your 'favourite accounts', your favourite accounts should be those who are a similar demographic and match to your profile. If you post content related to bands, then those interested
-                    in music are more likely to follow and engage with you! </p>                               
+               
+                <h4 className="font-24 color-black-3 mb-3">Add your favourite IG followers - @insta_vuhu</h4>
+                <p className="font-18 color-black-3 col-12">To get started, we ask you to connect at least 3 of your 'favourite accounts', 
+                your favourite accounts should be those who are a similar demographic 
+                and match to your profile. If you post content related to bands, 
+                then those interested in music are more 
+                likely to follow and engage with you!</p>                               
                 <div className="alert-box col-md-11 col-xl-5 mt-5">
                     <div className="row">
                         <div className="col-10 col-md-10">

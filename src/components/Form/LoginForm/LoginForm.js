@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './LoginForm.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faEyeSlash, faLock, } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
+import axios from "axios";
 
 const eye =  <FontAwesomeIcon icon={faEyeSlash} />
 
 const LoginForm =()=> {
-    const history = useHistory();
+    // const history = useHistory();
     const [email, setEamil] = useState('');
     const [password, setPassword] = useState('');
     const [passwordShown, setPasswordShown] = useState(false);
-
 
     const  handleChange = (e) => {
         if(e.target.type === 'email') {
@@ -21,19 +21,30 @@ const LoginForm =()=> {
             setPassword(e.target.value)
         }
     }
-
-    const   submitHandler = (e) => {
+    const submitHandler = (e) => {
         e.preventDefault();
-        console.log(email, password)
-
+        const formdata = {
+            email,
+            password,
+        }
+        axios.post('https://vuhu-d57c9-default-rtdb.firebaseio.com/id1.json', formdata)
+        .then((res)=>{
+           console.log(res)
+        })
     }
     const togglePasswordVisiblity = () => {
         setPasswordShown(passwordShown ? false : true);
       };
+    //  const godashboard=()=> {
+    //     history.push("/account");
+    //   }
+      useEffect(()=>{
+          console.log('component mount and update')
+      })
 
-     const godashboard=()=> {
-        history.push("/account");
-      }
+      useEffect(()=>{
+        console.log('component updated')
+    }, [])
     return(
         <form onSubmit={submitHandler}>
             <div className="input-group">
@@ -61,11 +72,9 @@ const LoginForm =()=> {
                 <input className="button-large from-submit-button" 
                 type="submit" 
                 value="Login" 
-                onClick={godashboard}/>
+                />
             </div>
         </form>
     )
-
-
 }
 export default LoginForm;

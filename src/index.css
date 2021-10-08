@@ -56,9 +56,15 @@ a {
 .color-grey-2 {
   color:#4F4F4F;
 }
-.color-grey-3 {
+.color-grey-3 { 
   color:#828282;
 
+}
+.color-grey-5 {
+  color:#E0E0E0;
+}
+.color-bg-grey-5 { 
+  background:#E0E0E0;
 }
 .color-white {
   color:#ffffff;
@@ -106,8 +112,18 @@ a {
   box-shadow: 4px 4px 0px #000000;
   text-decoration: none;
   padding: 20px 68px;
-  transition: 0.3s ease;
-  
+  transition: 0.3s ease; 
+}
+.pause-button {
+  border:none;
+  box-shadow: 4px 4px 0px #F2F2F2;
+  font-size: 18px;
+  padding: 12px 35px;
+  font-weight: 700;
+}
+.pause-button:hover {
+  box-shadow: 2px 2px 0px #F2F2F2;
+  transform: translateY(2px);
 }
 .button-small::after,
 .button-large::after {
@@ -118,7 +134,7 @@ a {
 }
 .button-large:hover {
   box-shadow: 3px 3px 0px #000000;
-transform: translateY(2px);
+  transform: translateY(2px);
 }
 .button-small:hover {
   box-shadow: 1px 1px 0px #000000;
@@ -175,4 +191,13 @@ input::focus {
   left: 20px;
   transform: translateY(-50%);
   z-index: 1;
+}
+@media only screen and (max-width:768px) {
+  .pause-button {
+    border: none;
+    box-shadow: 4px 4px 0px #f2f2f2;
+    font-size: 18px;
+    padding: 12px 24px;
+    font-weight: 700;
+}
 }

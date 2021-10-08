@@ -9,6 +9,7 @@ import WOW from 'wowjs'
 class Home extends React.Component {
     componentDidMount() {
         new WOW.WOW().init();
+      
     }
     render() {
         return(
