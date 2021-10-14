@@ -14,7 +14,7 @@ class DashboardLeftside extends React.Component {
                         <img src={Logo} alt="logo"/>
                     </div>
                     <div className="dash-logo-title col-8">
-                        <h2>VUHU</h2>
+                        <h2>vuhu</h2>
                     </div>
                 </div>
                 </Link>

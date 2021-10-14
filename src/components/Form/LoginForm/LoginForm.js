@@ -3,13 +3,13 @@ import './LoginForm.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faEyeSlash, faLock, } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 
 const eye =  <FontAwesomeIcon icon={faEyeSlash} />
 
 const LoginForm =()=> {
-    // const history = useHistory();
+    const history = useHistory();
     const [email, setEamil] = useState('');
     const [password, setPassword] = useState('');
     const [passwordShown, setPasswordShown] = useState(false);
@@ -35,9 +35,9 @@ const LoginForm =()=> {
     const togglePasswordVisiblity = () => {
         setPasswordShown(passwordShown ? false : true);
       };
-    //  const godashboard=()=> {
-    //     history.push("/account");
-    //   }
+     const godashboard=()=> {
+        history.push("/account");
+      }
       useEffect(()=>{
           console.log('component mount and update')
       })
@@ -72,6 +72,7 @@ const LoginForm =()=> {
                 <input className="button-large from-submit-button" 
                 type="submit" 
                 value="Login" 
+                onClick={godashboard}
                 />
             </div>
         </form>
