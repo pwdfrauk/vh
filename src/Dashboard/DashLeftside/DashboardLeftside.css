@@ -1,11 +1,17 @@
 .dashboard-left-area {
-    width: 30% !important;
+    width: 25% !important;
     
+}
+.dashboard-logo-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #263238;
+    margin-left: 0px;
 }
 .dashboard-left-container {
     height: 100vh;
-    padding-left: 5%;
-    width: 30% !important;
+    padding-left: 3%;
+    width: 25% !important;
     background: linear-gradient(110deg, rgba(248,193,54,0.5046393557422969) 0%, rgba(245,150,176,0.4990371148459384) 69%) !important;
     background-repeat: no-repeat;
     background-size: cover;

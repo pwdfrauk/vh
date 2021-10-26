@@ -44,12 +44,12 @@ export default  class LoginForm extends React.Component {
                  value={email} onChange={handleChange} />
                 <FontAwesomeIcon className='input-icon' icon={faEnvelope} />
             </div>
-            <div className="input-group">
+            <div className="input-group"> 
             <select value={registerType} onChange={handleChange}>
-                  <option value="" disabled selected>Select Register Type</option>
+                  <option value="" disabled selected>Select register type</option>
                    <option>Membership</option>
                    <option>Subscription</option>
-                   <option>Free-trial</option>
+                   <option>Free-trial</option>    
             </select>
             <FontAwesomeIcon className='input-icon' icon={faUsers} />
             </div>

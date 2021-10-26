@@ -1,4 +1,4 @@
-import { faPlusSquare, faPowerOff } from '@fortawesome/free-solid-svg-icons';
+import { faPowerOff } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
 import dashboardicon from './dashboarcon.png'
@@ -17,10 +17,11 @@ const DesktopMenuAccountGraph =()=> {
             <p><NavLink className='desktop-graph-menu color-grey-3' to="/account-seeting-fav-aco">Favourite Accounts</NavLink></p>
             <p><NavLink className='desktop-graph-menu color-grey-3'  to="/b">Whitelist (2.1k)</NavLink></p>
             <p><NavLink className='desktop-graph-menu color-grey-3'  to="/c">Disconnect Account</NavLink></p>
-            <Link className="dash-accout-link color-violet font-16" to="accountadd"> 
-             <FontAwesomeIcon icon={faPlusSquare} /> Connect New Account</Link>
+            {/* <Link className="dash-accout-link color-violet font-16" to="accountadd"> 
+             <FontAwesomeIcon icon={faPlusSquare} /> Connect New Account</Link> */}
              <div className="desktop-menu-log-out">
-                  <Link  className="color-grey-2" to="/" ><FontAwesomeIcon className="color-grey-2 me-2 font-18" icon={faPowerOff} /> Log Out</Link>
+                  <Link  className="color-grey-2" to="/" >
+                  <FontAwesomeIcon className="color-grey-2 me-2 font-18" icon={faPowerOff} /> Log Out</Link>
              </div>
              
         </div>

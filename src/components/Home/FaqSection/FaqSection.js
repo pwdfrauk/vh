@@ -1,4 +1,5 @@
 import Accordion from './Accordion/Accordion'
+import './FaqSection.css'
 const FaqSection =()=> {
     return(
     <section className="faq-section text-center wow animate__animated animate__slideInRight" data-wow-duration="2s">

@@ -5,7 +5,7 @@ import './AccordionState.css';
 
 
 const AccordionState = ({ title, content }) => {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);  
 
   return (
     <div className="accordion-item-vuhu  wow animate__animated animate__slideInRight" data-wow-duration="2s" >

@@ -20,7 +20,6 @@ select#location {
 }
 .account-add-card {
     border: none !important;
-    margin-top: 150px;;
 }
 .account-add-form input[type="text"], 
 .account-add-form input[type="password"],

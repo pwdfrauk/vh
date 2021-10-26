@@ -19,6 +19,7 @@ select {
     padding-right: 15px;
     border: 1px solid #000000;
     outline: none;
+    color:#828282;
 }
 slect:focus {
     border:1px solid #000000;
@@ -52,12 +53,12 @@ input::focus {
 }
 /* makeing select place holder  */
 select:required:invalid {
-    color: #666;
+    color: #828282;
   }
   option[value=""][disabled] {
     display: none;
   }
   option {
-    color: #333;
+    color: #828282;
   }
   /* end  select  placeholder  */

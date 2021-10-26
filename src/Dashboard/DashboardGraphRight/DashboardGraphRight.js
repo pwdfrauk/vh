@@ -1,5 +1,5 @@
 
-import Bar from '../Bar'
+import BarChart from '../Bar'
 import './DashboardGraphRight.css'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -17,7 +17,7 @@ const DashboardGraphRight =()=> {
     }
     
     return(
-        <div className="col-12 col-md-11  col-xl-12" >
+        <div className="col-12 col-md-11  col-lg-10 offset-lg-1 "  >
         <div className="account-rightside">
             <div className="account-setting-grap-area col-md-12">
                 <div className="account-stt-header-and-flow-dtls row mb-2 mb-md-4 ">
@@ -60,7 +60,7 @@ const DashboardGraphRight =()=> {
                     </div>
                 </div>
                 <div className="my-3 col-12">
-                    <Bar />
+                    <BarChart />
                     {/* <canvas id="myChart" width="400" height="200"></canvas> */}
                 </div>
             </div>
