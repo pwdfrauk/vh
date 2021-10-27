@@ -4,11 +4,26 @@ import './AccountSettingFavAcoRight.css'
 import instaimg from './insta.png'
 import growimg from './graphincrease.png'
 import Userdata from './UserData'
+import { useState } from 'react';
 
 const AccountSettingFavAcoRight=()=> {
     const maxlenth= 5;
-    const userdata = Userdata.map(info =>( <div className="row account-and-follower-card my-3" >
-    <div className="col-8 col-md-12 col-xl-6 px-0 px-md-2 mb-md-4 mb-xl-0">
+    const [favaccount, setFavaccount] = useState(Userdata);
+
+
+    const removeFavAccount=(accountIdex)=> {
+        const allAccount = [...favaccount];
+        allAccount.splice(accountIdex, 1);
+        setFavaccount(allAccount)
+    }
+
+    const favAccountHandler=(e)=> {
+        e.preventDefault();
+        console.log(userdata)
+    }
+
+    let userdata = favaccount.map( (info, index) =>( <div className="row account-and-follower-card my-3" >
+    <div className="col-8 col-md-12 col-xl-6 px-0 px-md-2 mb-md-4 mb-xl-0" key={index}>
         <div className="alert-box col-12 ">
             <div className="row justify-content-center justify-content-md-start">
                 <div className="col-10 px-0 px-md-2">
@@ -23,7 +38,7 @@ const AccountSettingFavAcoRight=()=> {
                     </div>
                 </div>
                 <div className="col-1 col-md-2 px-0 px-md-2 d-flex justify-content-center align-items-center">
-                   <FontAwesomeIcon className="close-alert" icon={faTimes} />
+                   <FontAwesomeIcon onClick={removeFavAccount.bind(this, index)} className="close-alert" icon={faTimes} />
                 </div>
             </div>
         </div>
@@ -46,6 +61,8 @@ const AccountSettingFavAcoRight=()=> {
     </div>
     </div>) 
     );
+
+
     return(
         <div className="account-setting-fav-aco-right-area">
         <div className="account-setting-fav-aco-area col-md-12 col-xl-12">
@@ -67,7 +84,7 @@ const AccountSettingFavAcoRight=()=> {
         </div>
         <p className="color-violet"> Add your favourite accounts ( {userdata.length} / {maxlenth} )</p>
         <div>
-            <form className="account-add-form mt-4 col-md-9 col-xl-5" >
+            <form className="account-add-form mt-4 col-md-9 col-xl-5" onSubmit={favAccountHandler}>
                 <div className="input-group">
                     <input type="text" id="username" 
                     name="username" 

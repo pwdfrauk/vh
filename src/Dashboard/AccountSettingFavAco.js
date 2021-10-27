@@ -12,7 +12,7 @@ const AccountSettingFavAco = ()=> {
         <div className="container-fluid">
             <div className="row">
                 <DashboardLeftside  >
-                <DesktopMenuAccountGraph />
+                    <DesktopMenuAccountGraph />
                 </DashboardLeftside>
                 <DashboardRightside >
                     <AccountSettingFavAcoRight />
